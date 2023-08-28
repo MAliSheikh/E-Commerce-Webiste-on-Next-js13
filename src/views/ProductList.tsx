@@ -16,37 +16,38 @@ const ProductList = () => {
             </div>
 
             <div className='mt-13 -m-px'>
-                <Link href="#">
-                    <Swiper
-                        breakpoints={{
-                            // width >= 300
-                            300: {
-                                slidesPerView: 1,
-                                spaceBetween: 100
-                            },
-                            // width >= 1000
-                            1000: {
-                                slidesPerView: 2,
-                                spaceBetween: 0
-                            },
-                            // width >= 1260
-                            1260: {
-                                slidesPerView: 3,
-                                spaceBetween: 0
-                            }
-                        }}
-                        slidesPerView={3}
-                        onSlideChange={() => console.log('slide change')}
-                        onSwiper={(swiper) => console.log(swiper)}
-                    >
+                <Swiper
+                    breakpoints={{
+                        // width >= 300
+                        300: {
+                            slidesPerView: 1,
+                            spaceBetween: 100
+                        },
+                        // width >= 1000
+                        1000: {
+                            slidesPerView: 2,
+                            spaceBetween: 0
+                        },
+                        // width >= 1260
+                        1260: {
+                            slidesPerView: 3,
+                            spaceBetween: 0
+                        }
+                    }}
+                    slidesPerView={3}
+                    onSlideChange={() => console.log('slide change')}
+                    onSwiper={(swiper) => console.log(swiper)}
+                >
+                    <Link href="#">
                         {
                             productChuks.map((product) => (
-                                <SwiperSlide key={product.id}><ProductCard  title={product.name} price={product.price} img={product.image} category={product.category} id={product.id} tagline={product.tagline}/></SwiperSlide>
+
+                                <SwiperSlide key={product.id}><ProductCard title={product.name} price={product.price} img={product.image} category={product.category} id={product.id} tagline={product.tagline} /></SwiperSlide>
                             ))
                         }
+                    </Link>
 
-                    </Swiper>
-                </Link>
+                </Swiper>
             </div>
 
 
