@@ -1,3 +1,5 @@
+import { defineField } from "sanity";
+
 export const product = {
     name: 'product',
     type: 'document',
@@ -23,6 +25,13 @@ export const product = {
             title: 'Product Image',
             type: 'image',
         },
+        defineField(
+        {
+            name:'category',
+            title:'Product Category',
+            type:'reference',
+            to:[{type:'category'}]
+        })
         
     ]
 }
