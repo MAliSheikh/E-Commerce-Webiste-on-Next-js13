@@ -11,6 +11,10 @@ yarn dev
 # or
 pnpm dev
 ```
+```
+for sanity installation in project
+npm create sanity@latest -- --template clean --create-project "learning-sanity-project" --dataset production
+```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
