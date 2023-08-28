@@ -6,7 +6,7 @@ const getProductByCategory = (category: string) => {
   return Products.filter((product) => product.category === category)
 }
 
-export default function Page({ params }: { params: { slug: string } }) {
+export default async function Page({ params }: { params: { slug: string } }) {
 
   const result = getProductByCategory(params.slug);
   return (

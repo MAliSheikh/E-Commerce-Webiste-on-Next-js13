@@ -1,9 +1,4 @@
 "use client"
-import Image from 'next/image'
-import { Button } from "@/components/ui/button"
-import { Mail } from "lucide-react"
-import { BiSolidUserCircle } from "react-icons/bi";
-import Link from 'next/link'
 import Hero from '@/views/Hero';
 import ProductList from '@/views/ProductList';
 import AddContent from '@/views/AddContent'

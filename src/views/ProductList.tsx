@@ -7,7 +7,6 @@ import Link from 'next/link'
 
 const ProductList = () => {
     const productChuks = Products.slice(0, 10)
-    console.log(productChuks)
     return (
         <>
             <div className='justify-center'>
