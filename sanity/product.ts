@@ -14,9 +14,15 @@ export const product = {
             type: 'string',
         },
         {
+            name: 'price',
+            title: 'Product Prcie',
+            type: 'number',
+        },
+        {
             name: 'image',
             title: 'Product Image',
             type: 'image',
         },
+        
     ]
 }
