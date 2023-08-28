@@ -32,16 +32,22 @@ export default async function Data() {
 // interface IProduct {
 //   title: string;
 //   description: string;
+//   image: string;
 // }
 
-// innside of function
+// // innside of function
 // export default async function Data() {
 
 //   const data: IProduct[] = await getProductData()
 //   return (
 //     <div>
 //       {data.map((product) => (
-//         <h1>{product.title}</h1>
+//         <>
+//           <h1>{product.title}</h1>
+//           <h1>{product.description}</h1>
+//           <h1>{product.image}</h1>
+//         </>
+
 //       ))}
 //     </div>
 //   )
